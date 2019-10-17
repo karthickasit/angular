@@ -10,6 +10,6 @@ export class TabledataService {
   constructor(private ht:HttpClient) { }
   getdata()
   {
-this.ht.get("https://jsonplaceholder.typicode.com/comments").subscribe(res=>this.details=res)
+return this.ht.get("https://jsonplaceholder.typicode.com/comments")
   }
 }
